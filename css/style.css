@@ -1,0 +1,43 @@
+/* =====================
+   VARIABLES Y BASE
+   ===================== */
+:root {
+  --color-acento: #c8813a;
+  --fuente-principal: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: #212529;
+  padding-top: 70px; /* compensa la navbar fija */
+}
+
+/* =====================
+   COLOR DE ACENTO
+   ===================== */
+.text-accent {
+  color: var(--color-acento) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-acento) !important;
+}
+
+.btn-accent {
+  background-color: var(--color-acento);
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #a8682e;
+  color: #fff;
+}
+
+/* =====================
+   HERO
+   ===================== */
+#hero {
+  min-height: 100vh;
+  background-color: #fff;
+}
