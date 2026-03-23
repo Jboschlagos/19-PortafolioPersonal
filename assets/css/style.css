@@ -1,0 +1,137 @@
+/* =====================
+   1. VARIABLES Y BASE
+   ===================== */
+:root {
+  --color-acento: #c8813a;
+  --color-texto: #1a1a1a;
+  --color-suave: #6b6b6b;
+  --fondo: #f7f7f7;
+  --fuente-principal: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto);
+  background-color: #fff;
+  padding-top: 64px;
+  line-height: 1.5;
+}
+
+/* Tipografía */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: var(--color-suave);
+  max-width: 60ch;
+}
+
+/* =====================
+   2. NAVEGACIÓN
+   ===================== */
+.navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: #333 !important;
+}
+
+.nav-link:hover {
+  color: var(--color-acento) !important;
+}
+
+/* =====================
+   3. HERO
+   ===================== */
+#hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+/* =====================
+   4. LAYOUT GENERAL
+   ===================== */
+section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+/* =====================
+   5. CARDS
+   ===================== */
+.card {
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* =====================
+   6. STACK
+   ===================== */
+#stack ul li {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #f1f1f1;
+  border: 1px solid #e5e5e5;
+}
+
+/* =====================
+   7. BOTONES
+   ===================== */
+.btn-dark,
+.btn-outline-dark {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-accent {
+  background-color: var(--color-acento);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #a8682e;
+  color: #fff;
+}
