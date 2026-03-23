@@ -55,22 +55,50 @@ p {
    3. HERO
    ===================== */
 #hero {
-  min-height: 70vh;
+  position: relative;
+
+  padding: 7rem 0 6rem; /* Aqui se resuelve la imagen de fondo */
   display: flex;
   align-items: center;
-  background: #f2f2f2;
+
+  background-image: url("/assets/img/fondoPagina.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
 }
 
+/* Overlay */
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* un poco más oscuro = mejor lectura */
+}
+
+/* Contenido encima */
+#hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tipografía */
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 #hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 auto;
+  max-width: 50ch;
 }
 
+#hero .lead {
+  color: #fff;
+}
 /* =====================
    4. LAYOUT GENERAL
    ===================== */
@@ -134,4 +162,14 @@ section {
 .btn-accent:hover {
   background-color: #a8682e;
   color: #fff;
+}
+
+#hero .btn-outline-dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+#hero .btn-outline-dark:hover {
+  background-color: #fff;
+  color: #000;
 }
