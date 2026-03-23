@@ -84,15 +84,3 @@ El menú móvil se cierra automáticamente mediante JavaScript, sin conflictos c
 Este proyecto es de código abierto y está disponible bajo la licencia MIT. Siéntete libre de usarlo como base para tu propio portafolio.
 
 Reducido – Desarrollado con ❤️ por Jorge Bosch Lagos
-
-text
-
----
-
-### 📌 Recomendaciones adicionales:
-
-1. **Captura de pantalla**: Si quieres incluir una imagen en el README, guarda una captura como `screenshot.png` en la carpeta `assets/img/` y actualiza la línea que dice `![Vista previa del sitio](assets/img/screenshot.png)`.
-2. **Demo en vivo**: Cuando tengas el sitio publicado (GitHub Pages, Netlify, etc.), actualiza la URL en la sección "Demo en vivo".
-3. **Enlaces de proyectos**: En el carrusel, reemplaza los `href="#"` de los botones "Demo" y "Código" por las URLs reales de tus proyectos.
-
-Si necesitas ajustar algo más del README, dime.
