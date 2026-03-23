@@ -7,10 +7,9 @@ Portafolio personal que presenta el trabajo y servicios de **Reducido**, un estu
 
 ![Vista previa del sitio](/assets/img/pantallazo01.jpeg)
 
-## 🚀 Demo en vivo
+![Vista previa Sitio Tocar Madera](/assets/img/tocarMadera01.jpeg)
 
-[Ver portafolio en línea](https://tudominio.com)  
-_(Actualiza con la URL de tu sitio cuando esté publicada)_
+![Vista previa del sitio Isma Rivera](/assets/img/ismaRivera01.jpeg)
 
 ## 📋 Características
 
