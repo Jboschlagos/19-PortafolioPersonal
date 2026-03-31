@@ -1,247 +1,641 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reducido | Estudio de desarrollo</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reducido | Estudio de desarrollo</title>
+    <!-- Favicon con R en círculo -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='2'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='black' font-weight='bold' font-family='Arial, Helvetica, sans-serif'%3ER%3C/text%3E%3C/svg%3E"
+    />
 
-  <!-- Favicon con R en círculo -->
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='white' stroke='black' stroke-width='2'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='black' font-weight='bold' font-family='Arial, Helvetica, sans-serif'%3ER%3C/text%3E%3C/svg%3E" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">Reducido</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-label="Menú de navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre">Estudio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#stack">Stack</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!-- HERO -->
-    <header id="hero" class="text-center" style="background-image: url('assets/img/fondoPagina.png');">
-
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
       <div class="container">
-        <h1 class="display-4 fw-bold">Reducido</h1>
-        <p class="lead mt-3">
-          Desarrollo de soluciones digitales simples, claras y funcionales
-        </p>
+        <a class="navbar-brand fw-bold" href="#hero">Reducido</a>
 
-        <div class="mt-4 d-flex justify-content-center gap-3">
-          <a href="#proyectos" class="btn btn-dark">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline-dark">Contacto</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Estudio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stack">Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="py-5 border-top">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h2 class="fw-bold mb-4">El estudio</h2>
+    <main>
+      <!-- HERO -->
+      <header
+        id="hero"
+        class="text-center"
+        style="background-image: url(&quot;assets/img/fondoPagina.png&quot;)"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold">Reducido</h1>
+          <p class="lead mt-3">
+            Desarrollo de soluciones digitales simples, claras y funcionales
+          </p>
 
-            <p>
-              Reducido es un estudio enfocado en resolver problemas reales a
-              través de desarrollo web. La lógica es simple: entender bien el
-              problema antes de construir cualquier solución.
-            </p>
-
-            <p>
-              El enfoque combina desarrollo Fullstack JavaScript con
-              experiencia en trabajo manual. Eso se traduce en decisiones
-              prácticas, soluciones eficientes y productos que funcionan.
-              Detras de esto esta Jorge Bosch, desarrollador web Junior en constrante 
-              formación. 
-            </p>
-
-            <p class="mb-0 text-muted">
-              Menos complejidad innecesaria. Más ejecución.
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <img src="assets/img/fondoscuro.png" class="img-fluid rounded-circle img-estudio" alt="Reducido estudio" />
+          <div class="mt-4 d-flex justify-content-center gap-3">
+            <a href="#proyectos" class="btn btn-dark">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline-dark">Contacto</a>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- PROYECTOS - CARRUSEL -->
-    <section id="proyectos" class="py-5 bg-light border-top">
-      <div class="container">
-        <h2 class="fw-bold mb-4">Proyectos</h2>
+      <!-- SOBRE -->
+      <section id="sobre" class="py-5 border-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="fw-bold mb-4">El estudio</h2>
 
-        <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Tocar Madera"></button>
-            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"
-              aria-label="pagina isma rivera"></button>
-            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"
-              aria-label="En desarrollo"></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- Proyecto 1 -->
-            <div class="carousel-item active">
-              <img src="assets/img/tocarMadera02.jpeg" class="d-block w-100" alt="Tocar Madera" />
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                <article>
-                  <h3 class="h5 fw-bold text-white">Tocar Madera</h3>
-                  <p class="small text-white-50">
-                    Marketplace colaborativo para artesanos. Incluye autenticación, carrito de compras y
-                    geolocalización.
-                  </p>
-                  <div class="d-flex justify-content-center gap-2 mb-2">
-                    <span class="badge bg-dark">Node.js</span>
-                    <span class="badge bg-dark">Express</span>
-                    <span class="badge bg-dark">PostgreSQL</span>
-                  </div>
-                  <div class="d-flex gap-2 justify-content-center">
-                    <a href="https://portafolio-m8-tocar-madera.vercel.app/" class="btn btn-sm btn-light" target="_blank"
-                      rel="noopener noreferrer">Demo</a>
-                    <a href="https://github.com/Jboschlagos/portafolioM8_TocarMadera" class="btn btn-sm btn-outline-light"
-                      target="_blank" rel="noopener noreferrer">Código</a>
-                  </div>
-                </article>
-              </div>
+              <p>
+                Reducido es un estudio enfocado en resolver problemas reales a
+                través de desarrollo web. La lógica es simple: entender bien el
+                problema antes de construir cualquier solución.
+              </p>
+
+              <p>
+                El enfoque combina desarrollo Fullstack JavaScript con
+                experiencia en trabajo manual. Eso se traduce en decisiones
+                prácticas, soluciones eficientes y productos que funcionan.
+                Detras de esto esta Jorge Bosch, desarrollador web Junior en
+                constrante formación.
+              </p>
+
+              <p class="mb-0 text-muted">
+                Menos complejidad innecesaria. Más ejecución.
+              </p>
             </div>
 
-            <!-- Proyecto 2 -->
-            <div class="carousel-item">
-              <img src="assets/img/ismaRivera02.jpeg" class="d-block w-100" alt="Portafolio Isma Rivera" />
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                <article>
-                  <h3 class="h5 fw-bold text-white">Página Portafolio Isma Rivera</h3>
-                  <p class="small text-white-50">
-                    Aplicación tipo portafolio de alto nivel para el Poeta Cantor Isma Rivera, en donde se muestran sus
-                    textos y música.
-                    Incluye reproductor de multimedia y un ecosistema completo del artista.
-                  </p>
-                  <div class="d-flex justify-content-center gap-2 mb-2">
-                    <span class="badge bg-dark">JavaScript</span>
-                    <span class="badge bg-dark">Vercel</span>
-                    <span class="badge bg-dark">CSS</span>
-                  </div>
-                  <div class="d-flex gap-2 justify-content-center">
-                    <a href="https://isma-rivera.vercel.app/#home" class="btn btn-sm btn-light" target="_blank"
-                      rel="noopener noreferrer">Demo</a>
-                    <a href="https://github.com/Jboschlagos/IsmaRivera" class="btn btn-sm btn-outline-light"
-                      target="_blank" rel="noopener noreferrer">Código</a>
-                  </div>
-                </article>
-              </div>
+            <div class="col-md-4 text-center">
+              <img
+                src="assets/img/fondoscuro.png"
+                class="img-fluid rounded-circle img-estudio"
+                alt="Reducido estudio"
+              />
             </div>
-
-            <!-- Proyecto 3 - Placeholder -->
-            <div class="carousel-item">
-              <img src="https://placehold.co/1200x400/2c3e50/ffffff?text=Próximamente" class="d-block w-100"
-                alt="En desarrollo" />
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                <article>
-                  <h3 class="h5 fw-bold text-white">En desarrollo</h3>
-                  <p class="small text-white-50">
-                    Nuevo proyecto en proceso. Mantente atento.
-                  </p>
-                </article>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
           </div>
         </div>
-    </section>
+      </section>
+      <!-- PROYECTOS - CARDS -->
+      <section
+        id="proyectos"
+        class="py-5 bg-light border-top"
+        aria-labelledby="titulo-proyectos"
+      >
+        <div class="container">
+          <h2 class="fw-bold mb-4" id="titulo-proyectos">Proyectos</h2>
 
-    <!-- STACK -->
-    <section id="stack" class="py-5 border-top text-center">
-      <div class="container">
-        <h2 class="fw-bold mb-4">Stack</h2>
-        <ul class="list-inline d-flex flex-wrap justify-content-center gap-2 mb-0">
-          <li class="list-inline-item tech tech-html">HTML</li>
-          <li class="list-inline-item tech tech-css">CSS</li>
-          <li class="list-inline-item tech tech-js">JavaScript</li>
-          <li class="list-inline-item tech tech-bootstrap">Bootstrap</li>
-          <li class="list-inline-item tech tech-node">Node.js</li>
-          <li class="list-inline-item tech tech-express">Express</li>
-          <li class="list-inline-item tech tech-postgres">PostgreSQL</li>
-          <li class="list-inline-item tech tech-react">React</li>
-        </ul>
-      </div>
-    </section>
+          <ul class="row g-4 list-unstyled">
+            <!-- Card 1: Tocar Madera -->
+            <li class="col-md-4">
+              <article class="proyecto-card h-100">
+                <div class="proyecto-card-img">
+                  <img
+                    src="assets/img/tocarMadera01.jpeg"
+                    alt="Captura del proyecto Tocar Madera"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="proyecto-card-body">
+                  <h3 class="proyecto-card-title">Tocar Madera</h3>
+                  <p class="proyecto-card-desc">
+                    Marketplace colaborativo para artesanos con autenticación,
+                    carrito de compras y geolocalización.
+                  </p>
+                  <ul
+                    class="proyecto-card-badges list-unstyled mb-3"
+                    aria-label="Tecnologías usadas"
+                  >
+                    <li class="badge tech-node">Node.js</li>
+                    <li class="badge tech-express">Express</li>
+                    <li class="badge tech-postgres">PostgreSQL</li>
+                  </ul>
+                  <button
+                    class="btn btn-dark btn-sm"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalTocarMadera"
+                    aria-haspopup="dialog"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </li>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="py-5 bg-light border-top">
-      <div class="container">
-        <h2 class="fw-bold mb-4">Contacto</h2>
-        <p class="text-muted">
-          Si tienes un proyecto o una idea clara, se puede trabajar.
-        </p>
-        <div class="d-flex flex-column flex-md-row gap-3">
-          <a href="mailto:jboschlagos@gmail.com?subject=Consulta%20desde%20portafolio&body=Hola%2C%20me%20interesa%20contactarte%20por..."
-            class="btn btn-dark">
-            <i class="bi bi-envelope"></i> Email
-          </a>
-          <a href="https://github.com/Jboschlagos" class="btn btn-outline-dark">
-            <i class="bi bi-github"></i> GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/jorgeboschlagos/" class="btn btn-outline-dark">
-            <i class="bi bi-linkedin"></i> LinkedIn
-          </a>
+            <!-- Card 2: Isma Rivera -->
+            <li class="col-md-4">
+              <article class="proyecto-card h-100">
+                <div class="proyecto-card-img">
+                  <img
+                    src="assets/img/ismaRivera01.jpeg"
+                    alt="Captura del proyecto Portafolio Isma Rivera"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="proyecto-card-body">
+                  <h3 class="proyecto-card-title">Isma Rivera</h3>
+                  <p class="proyecto-card-desc">
+                    Portafolio para el Poeta Cantor Isma Rivera con reproductor
+                    multimedia y ecosistema del artista.
+                  </p>
+                  <ul
+                    class="proyecto-card-badges list-unstyled mb-3"
+                    aria-label="Tecnologías usadas"
+                  >
+                    <li class="badge tech-js">JavaScript</li>
+                    <li class="badge tech-css">CSS</li>
+                    <li class="badge" style="background: #000; color: #fff">
+                      Vercel
+                    </li>
+                  </ul>
+                  <button
+                    class="btn btn-dark btn-sm"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalIsmaRivera"
+                    aria-haspopup="dialog"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <!-- Card 3: Javiera Vio -->
+           <li class="col-md-4">
+              <article class="proyecto-card h-100">
+                <div class="proyecto-card-img">
+                  <img
+                    src="assets/img/javieraVio01.jpeg"
+                    alt="Captura del proyecto Portafolio Javiera Vio"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="proyecto-card-body">
+                  <h3 class="proyecto-card-title">Javiera Vio</h3>
+                  <p class="proyecto-card-desc">
+                    Portafolio para la Productora Javiera Vio con reproductor
+                    multimedia y ecosistema del artista.
+                  </p>
+                  <ul
+                    class="proyecto-card-badges list-unstyled mb-3"
+                    aria-label="Tecnologías usadas"
+                  >
+                    <li class="badge tech-js">JavaScript</li>
+                    <li class="badge tech-css">CSS</li>
+                    <li class="badge" style="background: #000; color: #fff">
+                     Httml
+                    </li>
+                  </ul>
+                  <button
+                    class="btn btn-dark btn-sm"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalJavieraVio"
+                    aria-haspopup="dialog"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </li>
+
+      <!-- ==============================
+     MODALES DE PROYECTOS
+     ============================== -->
+
+      <!-- Modal: Tocar Madera -->
+      <div
+        class="modal fade"
+        id="modalTocarMadera"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTocarMaderaLabel"
+        aria-modal="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+              <h2 class="modal-title h5 fw-bold" id="modalTocarMaderaLabel">
+                Tocar Madera
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar modal"
+              ></button>
+            </div>
+            <div class="modal-body pt-2">
+              <figure class="mb-4">
+                <div
+                  id="carouselTocarMadera"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  aria-label="Imágenes del proyecto Tocar Madera"
+                >
+                  <div class="carousel-inner rounded-3 overflow-hidden">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/tocarMadera01.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Tocar Madera — vista principal"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/tocarMadera02.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Tocar Madera — segunda vista"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/tocarMadera03.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Tocar Madera — tercera vista"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/tocarMadera04.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Tocar Madera — cuarta vista"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselTocarMadera"
+                    data-bs-slide="prev"
+                    aria-label="Imagen anterior"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselTocarMadera"
+                    data-bs-slide="next"
+                    aria-label="Imagen siguiente"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </div>
+                <figcaption class="visually-hidden">
+                  Capturas de pantalla del proyecto Tocar Madera
+                </figcaption>
+              </figure>
+
+              <nav aria-label="Enlaces del proyecto Tocar Madera">
+                <a
+                  href="https://portafolio-m8-tocar-madera.vercel.app/"
+                  class="btn btn-dark btn-sm me-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+
+                <a
+                  href="https://github.com/Jboschlagos/portafolioM8_TocarMadera"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Código
+                </a>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="py-4 text-center border-top">
-    <small class="text-muted">© 2026 Reducido</small>
-  </footer>
+      <!-- Modal: Isma Rivera -->
+      <div
+        class="modal fade"
+        id="modalIsmaRivera"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalIsmaRiveraLabel"
+        aria-modal="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+              <h2 class="modal-title h5 fw-bold" id="modalIsmaRiveraLabel">
+                Isma Rivera
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar modal"
+              ></button>
+            </div>
+            <div class="modal-body pt-2">
+              <figure class="mb-4">
+                <div
+                  id="carouselIsmaRivera"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  aria-label="Imágenes del proyecto Isma Rivera"
+                >
+                  <div class="carousel-inner rounded-3 overflow-hidden">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/ismaRivera01.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Isma Rivera — vista principal"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/ismaRivera02.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Isma Rivera — segunda vista"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/ismaRivera03.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Isma Rivera — tercera vista"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselIsmaRivera"
+                    data-bs-slide="prev"
+                    aria-label="Imagen anterior"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselIsmaRivera"
+                    data-bs-slide="next"
+                    aria-label="Imagen siguiente"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </div>
+                <figcaption class="visually-hidden">
+                  Capturas de pantalla del proyecto Isma Rivera
+                </figcaption>
+              </figure>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
+              <nav aria-label="Enlaces del proyecto Isma Rivera">
+                <a
+                  href="https://isma-rivera.vercel.app/#home"
+                  class="btn btn-dark btn-sm me-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
 
+                <a
+                  href="https://github.com/Jboschlagos/IsmaRivera"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Código
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Modal: javiera Vio -->
+      <div
+        class="modal fade"
+        id="modalJavieraVio"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalJavieraVioLabel"
+        aria-modal="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+              <h2 class="modal-title h5 fw-bold" id="modalJavieraVioLabel">
+                Javiera Vio
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar modal"
+              ></button>
+            </div>
+            <div class="modal-body pt-2">
+              <figure class="mb-4">
+                <div
+                  id="carouselIsmaRivera"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  aria-label="Imágenes del proyecto Isma Rivera"
+                >
+                  <div class="carousel-inner rounded-3 overflow-hidden">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/javieraVio01.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Javiera Vio — vista principal"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/javieraVio02.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Javiera Vio — segunda vista"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/img/javieraVio03.jpeg"
+                        class="d-block w-100 modal-carousel-img"
+                        alt="Javiera Vio — tercera vista"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselJavieraVio"
+                    data-bs-slide="prev"
+                    aria-label="Imagen anterior"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselIsmaRivera"
+                    data-bs-slide="next"
+                    aria-label="Imagen siguiente"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </div>
+                <figcaption class="visually-hidden">
+                  Capturas de pantalla del proyecto Javiera Vio
+                </figcaption>
+              </figure>
+
+              <nav aria-label="Enlaces del proyecto Javiera Vio">
+                <a
+                  href="https://jboschlagos.github.io/02-JavieraVio/#home"
+                  class="btn btn-dark btn-sm me-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+
+                <a
+                  href="https://github.com/Jboschlagos/02-JavieraVio"
+                  class="btn btn-outline-dark btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Código
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STACK -->
+      <section id="stack" class="py-5 border-top text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Stack</h2>
+          <ul
+            class="list-inline d-flex flex-wrap justify-content-center gap-2 mb-0"
+          >
+            <li class="list-inline-item tech tech-html">HTML</li>
+            <li class="list-inline-item tech tech-css">CSS</li>
+            <li class="list-inline-item tech tech-js">JavaScript</li>
+            <li class="list-inline-item tech tech-bootstrap">Bootstrap</li>
+            <li class="list-inline-item tech tech-node">Node.js</li>
+            <li class="list-inline-item tech tech-express">Express</li>
+            <li class="list-inline-item tech tech-postgres">PostgreSQL</li>
+            <li class="list-inline-item tech tech-react">React</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="py-5 bg-light border-top">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Contacto</h2>
+          <p class="text-muted">
+            Si tienes un proyecto o una idea clara, se puede trabajar.
+          </p>
+          <div class="d-flex flex-column flex-md-row gap-3">
+            <a
+              href="mailto:jboschlagos@gmail.com?subject=Consulta%20desde%20portafolio&body=Hola%2C%20me%20interesa%20contactarte%20por..."
+              class="btn btn-dark"
+            >
+              <i class="bi bi-envelope"></i> Email
+            </a>
+            <a
+              href="https://github.com/Jboschlagos"
+              class="btn btn-outline-dark"
+            >
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jorgeboschlagos/"
+              class="btn btn-outline-dark"
+            >
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center border-top">
+      <small class="text-muted">© 2026 Reducido</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
